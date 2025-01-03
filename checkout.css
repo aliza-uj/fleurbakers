@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #4E342E;
+    color: #333333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #EED9C4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  #order-summary {
+    margin-bottom: 20px;
+  }
+  
+  #order-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #order-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #total-price {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(216, 186, 123);
+    color: black;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6d4c41;
+  }
+  
+  #success-message {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .green-tick {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .hidden {
+    display: none;
+  }  

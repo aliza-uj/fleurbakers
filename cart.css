@@ -1,0 +1,137 @@
+/* Reset body margin to remove gaps */
+body {
+    background-color: #EED9C4;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+  }
+  
+  /* Style for the navigation bar */
+  nav {
+    background-color: #4E342E; /* Set nav background color */
+    padding: 10px;
+    position: fixed; /* Fix the nav bar to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    border-radius: 0; /* Remove border-radius for full-width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  }
+  
+  /* Add spacing to the cart container to avoid overlapping */
+  .cart-container {
+    margin-top: 60px; /* Adjust based on the nav height */
+  }
+  
+  /* Style for the Home button */
+  nav .btn-primary {
+    background-color: rgb(216, 186, 123); /* Set button background color */
+    border-color: rgb(216, 186, 123); /* Set border color */
+    color: #fff; /* Set text color */
+  }
+  
+  /* Add hover effect for the Home button */
+  nav .btn-primary:hover {
+    background-color: rgb(190, 160, 100); /* Slightly darker on hover */
+    border-color: rgb(190, 160, 100);
+  }
+
+  
+  .cart-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .quantity-controls button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #4E342E;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .quantity-controls input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .btn-remove:hover {
+    background-color: #b52a36;
+  }
+  
+  .total-price {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+
+  /* Style for the checkout button */
+.checkout-btn {
+    background-color:  #4E342E;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: rgb(207, 184, 120);
+    color: white;
+  }  
+  
+  @media (max-width: 576px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .total-price {
+      text-align: center;
+    }
+  }  
